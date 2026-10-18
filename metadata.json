@@ -1,0 +1,6 @@
+{
+  "name": "Solana Apex Quantum Bot",
+  "description": "Professional ultra low-latency Solana trading bot terminal with interactive volatility candlestick charts, DEX arbitrage matrix, meme sniping radar, automated risk guard, backtesting engine, and AI market intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

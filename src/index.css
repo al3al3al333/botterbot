@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sol-purple: #9945FF;
+    --sol-green: #14F195;
+    --sol-cyan: #00F0FF;
+    --sol-dark: #080b11;
+    --sol-card: #0f141e;
+    --sol-border: #1e2638;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom sleek scrollbar for trading feeds and depth ladders */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080b11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9945FF;
+}
+
+/* Pulse and glow animations */
+@keyframes neonGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(20, 241, 149, 0.25), inset 0 0 10px rgba(153, 69, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(20, 241, 149, 0.45), inset 0 0 15px rgba(153, 69, 255, 0.35);
+  }
+}
+
+.neon-border {
+  border: 1px solid rgba(20, 241, 149, 0.4);
+  box-shadow: 0 0 12px rgba(20, 241, 149, 0.15);
+}
+
+.purple-glow {
+  box-shadow: 0 0 20px rgba(153, 69, 255, 0.25);
+}
+
+.emerald-glow {
+  box-shadow: 0 0 20px rgba(20, 241, 149, 0.25);
+}
